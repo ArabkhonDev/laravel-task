@@ -5,16 +5,19 @@
         </h2>
     </x-slot>
 
-    <div class="">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm">
-                <div class="p-6 text-gray-900 dark:text-gray-100 min-h-screen">
-                    @if (auth()->user()->role->name == 'manager')
+    <style>
+        .main{
+            width: 1000px;
+        }
+    </style>
+    <div class="w-7xl mx-auto sm:px-6 main">
+        <div class="bg-white dark:bg-gray-800  shadow-sm">
+            <div class="p-6 text-gray-900 dark:text-gray-100 min-h-screen">
+                @if (auth()->user()->role->name == 'manager')
                     @include('application.index')
-                    @else
+                @else
                     @include('application.create')
-                    @endif
-                </div>
+                @endif
             </div>
         </div>
     </div>

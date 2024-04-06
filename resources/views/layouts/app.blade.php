@@ -18,9 +18,8 @@
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-        <div class="flex">
-
-            <div class="">
+        <div class="flex w-full">
+            <div>
                 @include('layouts.navigation')
                 @if (isset($header))
                     <header class="bg-white dark:bg-gray-800 shadow min-h-screen ">
