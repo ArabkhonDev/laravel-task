@@ -19,18 +19,13 @@
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
-        <div class="flex w-full">
+        <div class="w-full">
             <div>
                 @include('layouts.navigation')
                 @if (isset($header))
-                    <header class="bg-white dark:bg-gray-800 shadow min-h-screen ">
-                        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <header class="bg-white dark:bg-gray-800 shadow ">
+                        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 mb-2">
                             {{ $header }}
-                            <p><a href="#" class="link text-white font-bold">Yangi arizalar</a></p>
-                            <p><a href="#" class="link text-white font-bold">Hamkorlar</a></p>
-                            <p><a href="#" class="link text-white font-bold">Javob berilganlar</a></p>
-                            <p><a href="#" class="link text-white font-bold">Javob berilmaganlar.</a></p>
-                            <p><a href="#" class="link text-white font-bold">Umumiy Arizalar</a></p>
                         </div>
                     </header>
                 @endif

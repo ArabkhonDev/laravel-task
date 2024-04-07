@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Mail;
 
 class ApplicationController extends Controller
 {
-    public function index(){
 
+   
+
+    public function index(){
         $applications = Application::latest()->paginate(10);
         return view('application.index')->with([
             $applications => 'applications'

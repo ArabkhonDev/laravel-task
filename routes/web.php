@@ -7,10 +7,16 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware'=>'auth'], function(){
-    Route::get('/', [MainController::class, 'main'])->name('main');
-    Route::get('/dashboard', [MainController::class, 'dashboard'])->name('dashboard');
-    Route::get('applications/{application}/answer', [AnswerController::class, 'create'])->name('answers.create');
-    Route::post('applications/{application}/answer', [AnswerController::class, 'store'])->name('answers.store');
+    Route::get('/', [MainController::class, 'main'])
+        ->name('main');
+    Route::get('/dashboard', [MainController::class, 'dashboard'])
+        ->name('dashboard');
+    Route::get('applications/{application}/answer', [AnswerController::class, 'create'])
+        ->name('answers.create');
+    Route::get('answer/application_answer', [AnswerController::class, 'application_answer'])
+        ->name('answers.application_answer');
+    Route::post('applications/{application}/answer', [AnswerController::class, 'store'])
+        ->name('answers.store');
     Route::resource('application', ApplicationController::class);
 });
     

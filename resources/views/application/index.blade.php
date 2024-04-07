@@ -1,5 +1,5 @@
 <div class="container pt-2 scroll-m-0 overflow-y-hidden ">
-    <h1>Kelib tushgan arizalar</h1>
+    <h1>Recived applications</h1>
     <div class="application-collect">
 
         @foreach ($applications as $application)
