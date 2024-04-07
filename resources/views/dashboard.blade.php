@@ -16,7 +16,6 @@
                 @if (auth()->user()->role->name == 'manager')
                     @include('application.index')
                 @else
-                
                     @include('application.create')
                 @endif
             </div>

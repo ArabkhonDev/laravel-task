@@ -6,8 +6,6 @@ use App\Models\Application;
 use Illuminate\Bus\Queueable;
 // use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-// use Illuminate\Mail\Mailables\Content;
-// use Illuminate\Mail\Mailables\Envelope;
 // use Illuminate\Mail\Mailables\Address;
 use Illuminate\Queue\SerializesModels;
 
@@ -22,7 +20,18 @@ class ApplicationCreated extends Mailable
         $this->application = $application;
     }
 
-   
+    public function build()
+    {
+        $mail = $this->from('test@example.com', 'Laravel message')
+            ->subject('Application Created')
+            ->view('emails.application-created');
+
+        if(! is_null($this->application->file_url)){
+            $mail->attachFromStorageDisk('public',$this->application->file_url);
+        }
+
+        return $mail;
+    }
 }
     // public function envelope(): Envelope
     // {

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreApplicationRequest;
 use App\Jobs\SendEmailJob;
 use App\Mail\ApplicationCreated;
 use App\Models\Application;
@@ -20,9 +21,7 @@ class ApplicationController extends Controller
         ]);
     }
 
-
-    public function store(Request $request){
-
+    public function store(StoreApplicationRequest $request){
         
         if($this->checkDate()){
             return redirect()->back()->with('error', 'You can only 1 application create a day');
@@ -33,12 +32,6 @@ class ApplicationController extends Controller
             $path = $request->file('file')->storeAs('files', $name, 'public');
         }
 
-        $request->validate([
-            'subject' => 'required|max:255',
-            'message'=> 'required',
-            'file'=>'file|mimes:png,jpg,svg,pdf',
-        ]);
-
         $application = Application::create([
             'user_id'=> auth()->user()->id,
             'subject'=>$request->subject,
@@ -47,7 +40,6 @@ class ApplicationController extends Controller
         ]);
 
         dispatch(new SendEmailJob($application));
-
         return redirect()->back();
     }
 
@@ -55,11 +47,10 @@ class ApplicationController extends Controller
         if(is_null(auth()->user()->applications()->latest()->first())){
             return false;
         }
-        
+
         $last_application = auth()->user()->applications()->latest()->first();
         $last_app_date = Carbon::parse($last_application->created_at)->format('Y-m-D');
         $today = Carbon::now()->format('Y-m-D');
-
 
         if($last_app_date == $today){
             return true;
