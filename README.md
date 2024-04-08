@@ -1,66 +1,68 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Vaqt tez o'tadi xuddi laravel o'rganish va project qilish uchun ketgan vaqt kabi
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Portfolio My project => task Project
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Bu amaliyotda <b>Laravel</b>ni o'rganish uchun
 
-## Learning Laravel
+- [Laravelda oddiy va tez route yaratish](https://laravel.com/docs/routing).
+- [Murabba security ga ega controller yaratish](https://laravel.com/docs/container).
+- Maxsus,qulay [Sifatli va ajoyib databasi](https://laravel.com/docs/eloquent).
+- Database agnostic [Database Sxema migratsiyasi](https://laravel.com/docs/migrations).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Laravel juda kuchli va oson o'rganish uchun O'zbek tilidagi darslar [Youtobedagi: Nuraliyev O'rgatadi](https://www.youtube.com/@NuraliyevOrgatadi)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Kod qo'shimcha qo'shish uchun [Arabkhon Nishonov](https://github.com/arabkhondev/laravel-task).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Project o'natish uchun 
 
-## Security Vulnerabilities
+```
+ Composer install 
+```
+```
+ npm install
+```
+### Laravel blade run qilish
+```
+ npm run dev 
+ or
+ yarn run dev
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Project foydalanuvchilari
+
+### Manager
+-login manage@smart.com
+-parol: secret
+
+### Mijoz
+-login: client@smart.com
+-parol: secret
+
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework ochiq kodli software litsenziya  [MIT license](https://opensource.org/licenses/MIT) dan olgan.
+
+
+``` 
+## Project Maqsadi:
+ 
+ Ochiq sistemadagi Korxona makchiliklari uchun
+ Manager va mijoz uchun mo'ljallangan
+ Mijoz ro'yxatdan o'tib savollari bo'lsa so'rov qoldirish mumkin, faqat kuniga 1 marta xalos.
+ shu kabi loyiha: <h3>Zikr ahlidan so'rang</h3>
+ Keyinchalik web application version o'zgaradi albatta 
+
+```
+
+## Project database UML Strukturasi
+
+![alt text](Task-project.png)
