@@ -9,7 +9,7 @@
 ### Bu amaliyotda <b>Laravel</b>ni o'rganish uchun
 
 - [Laravelda oddiy va tez route yaratish](https://laravel.com/docs/routing).
-- [Murabba security ga ega controller yaratish](https://laravel.com/docs/container).
+- [Murakkab security ga ega controller yaratish](https://laravel.com/docs/container).
 - Maxsus,qulay [Sifatli va ajoyib databasi](https://laravel.com/docs/eloquent).
 - Database agnostic [Database Sxema migratsiyasi](https://laravel.com/docs/migrations).
 
