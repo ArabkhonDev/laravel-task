@@ -7,7 +7,7 @@
 
     <style>
         .main{
-            width: 1000px;
+            width: 1200px;
         }
     </style>
     <div class="w-7xl mx-auto sm:px-6 main">
